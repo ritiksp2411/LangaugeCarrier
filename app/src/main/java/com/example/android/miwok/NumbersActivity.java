@@ -44,12 +44,15 @@ public class NumbersActivity extends AppCompatActivity {
         words.add(new Word("eight", "kawinta", R.drawable.number_eight));
         words.add(new Word("nine", "wo’e", R.drawable.number_nine));
         words.add(new Word("ten", "na’aacha", R.drawable.number_ten));
-        WordAdapter adaptor= new  WordAdapter(this,words);
+
+
+
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_numbers);
 //        ArrayAdapter<Word> itemsAdapter = new ArrayAdapter<Word>(this, R.layout.list_item, words);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
-        listView.setAdapter(adaptor);
+        listView.setAdapter(adapter);
 
 //        // to get the values alist.get(0) to get first element
 //        LinearLayout rootView =(LinearLayout) findViewById(R.id.rootview);
